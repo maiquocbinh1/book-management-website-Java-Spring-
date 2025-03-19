@@ -1,9 +1,91 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36" version="26.1.1">
-  <diagram name="Trang-1" id="PH6gltw71gonidjJD0O-">
+  <diagram name="Trang-1" id="9SzkFTrZi06ZUEtZh5F9">
     <mxGraphModel>
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="2" value="Start" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="8" y="136" width="95" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="3" value="Enter Book Details" style="rhombus;strokeWidth=2;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="153" y="70" width="186" height="186" as="geometry" />
+        </mxCell>
+        <mxCell id="4" value="Save Book Details" style="rhombus;strokeWidth=2;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="542" y="73" width="180" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="5" value="View Books List" style="rhombus;strokeWidth=2;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="962" y="148" width="164" height="164" as="geometry" />
+        </mxCell>
+        <mxCell id="6" value="Display Books List" style="rhombus;strokeWidth=2;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="1285" y="139" width="181" height="181" as="geometry" />
+        </mxCell>
+        <mxCell id="7" value="Edit Book Details" style="rhombus;strokeWidth=2;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="1606" y="8" width="175" height="175" as="geometry" />
+        </mxCell>
+        <mxCell id="8" value="Delete Book" style="rhombus;strokeWidth=2;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="1624" y="276" width="140" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="9" value="Book Deleted Successfully" style="rhombus;strokeWidth=2;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="1958" y="179" width="240" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="10" value="" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.49;entryX=0;entryY=0.5;" edge="1" parent="1" source="2" target="3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="11" value="Book Details Entered" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="3" target="4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="12" value="Details Saved Successfully" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.66;entryX=0;entryY=0.5;" edge="1" parent="1" source="4" target="5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="842" y="230" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="13" value="View All Books" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="5" target="6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="14" value="Edit book" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.24;entryX=0;entryY=0.66;" edge="1" parent="1" source="6" target="7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1536" y="147" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="15" value="Delete book" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.86;entryX=0;entryY=0.5;" edge="1" parent="1" source="6" target="8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1536" y="346" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="16" value="Update details" style="curved=1;startArrow=none;endArrow=block;exitX=0;exitY=0.45;entryX=1;entryY=0.3;" edge="1" parent="1" source="7" target="4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1536" y="80" />
+              <mxPoint x="842" y="80" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="17" value="Confirm Deletion" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.5;entryX=0;entryY=0.61;" edge="1" parent="1" source="8" target="9">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1870" y="346" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="18" value="Return to Book List" style="curved=1;startArrow=none;endArrow=block;exitX=0;exitY=0.33;entryX=1;entryY=0.5;" edge="1" parent="1" source="9" target="6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1870" y="230" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
