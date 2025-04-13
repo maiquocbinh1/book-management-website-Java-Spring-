@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BookStore</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #f8f9fc;
+      }
+
+      header {
+        background: #fff;
+        padding: 20px 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+        padding: 0;
+        margin: 0;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: #000;
+      }
+
+      .header-right {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .header-right input[type="text"] {
+        padding: 6px 10px;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+      }
+
+      .header-right button {
+        padding: 6px 12px;
+        background-color: #2b6cb0;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      .header-right button:hover {
+        background-color: #1a4f8b;
+      }
+
+      .hero {
+        background: #eaf1fd;
+        padding: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 40px;
+        max-width: 1200px;
+        margin: auto;
+      }
+
+      .hero-left {
+        flex: 2;
+      }
+
+      .hero-left h1 {
+        font-size: 28px;
+      }
+
+      .hero-left p {
+        margin: 10px 0;
+      }
+
+      .hero-left button {
+        padding: 10px 20px;
+        background-color: #2b6cb0;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .hero-right {
+        flex: 1;
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .categories,
+      .featured-books {
+        padding: 40px;
+        max-width: 1200px;
+        margin: auto;
+      }
+
+      .categories h2,
+      .featured-books h2 {
+        margin-bottom: 20px;
+      }
+
+      .category-list,
+      .book-list {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+
+      .category-item,
+      .book-item {
+        background: #fff;
+        padding: 20px;
+        border-radius: 6px;
+        flex: 1;
+        min-width: 200px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      }
+
+      .book-item button {
+        background: #2b6cb0;
+        color: white;
+        border: none;
+        padding: 8px 12px;
+        margin-top: 10px;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      .newsletter {
+        background-color: #2b6cb0;
+        color: white;
+        text-align: center;
+        padding: 40px;
+      }
+
+      .newsletter input[type="email"] {
+        padding: 10px;
+        width: 300px;
+        max-width: 80%;
+        margin-right: 10px;
+        border-radius: 5px;
+        border: none;
+      }
+
+      .newsletter button {
+        padding: 10px 20px;
+        background: white;
+        color: #2b6cb0;
+        border: none;
+        border-radius: 5px;
+      }
+
+      footer {
+        background: #1a202c;
+        color: #cbd5e0;
+        padding: 30px 40px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        font-size: 14px;
+      }
+
+      footer div {
+        margin-bottom: 20px;
+      }
+
+      footer h4 {
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div><strong style="color: #2b6cb0">BookStore</strong></div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Categories</a></li>
+          <li><a href="#">New Releases</a></li>
+          <li><a href="#">Best Sellers</a></li>
+        </ul>
+      </nav>
+      <div class="header-right">
+        <input type="text" placeholder="Search books..." />
+        <span>Cart (0)</span>
+        <button>Sign In</button>
+        <button>Register</button>
+        <button>Sign Out</button>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="hero-left">
+        <h1>Discover Your Next Favorite Book</h1>
+        <p>
+          Explore millions of books at the best prices. Free shipping on
+          qualified orders.
+        </p>
+        <button>Shop Now</button>
+      </div>
+      <div class="hero-right">
+        <h3>Featured Books</h3>
+        <ul>
+          <!-- Trống theo yêu cầu -->
+        </ul>
+      </div>
+    </section>
+
+    <section class="categories">
+      <h2>Popular Categories</h2>
+      <div class="category-list">
+        <div class="category-item">
+          Fiction<br /><small>Explore fictional worlds</small>
+        </div>
+        <div class="category-item">
+          Non-Fiction<br /><small>Learn something new</small>
+        </div>
+        <div class="category-item">
+          Children's Books<br /><small>For young readers</small>
+        </div>
+        <div class="category-item">
+          Academic<br /><small>Educational resources</small>
+        </div>
+      </div>
+    </section>
+
+    <section class="featured-books">
+      <h2>Featured Books</h2>
+      <div class="book-list">
+        <div class="book-item">
+          <p><strong>The magician</strong><br />Author Name</p>
+          <p>$19.99</p>
+          <button>Add to Cart</button>
+        </div>
+        <div class="book-item">
+          <p><strong>Life of pi</strong><br />Author Name</p>
+          <p>$34.99</p>
+          <button>Add to Cart</button>
+        </div>
+        <div class="book-item">
+          <p><strong>How rich?</strong><br />Author Name</p>
+          <p>$29.99</p>
+          <button>Add to Cart</button>
+        </div>
+        <div class="book-item">
+          <p><strong>My life</strong><br />Author Name</p>
+          <p>$15.99</p>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="newsletter">
+      <h2>Subscribe to Our Newsletter</h2>
+      <p>Get updates on new releases and exclusive offers</p>
+      <input type="email" placeholder="Enter your email" />
+      <button>Subscribe</button>
+    </section>
+
+    <footer>
+      <div>
+        <h4>About Us</h4>
+        <p>Our Story<br />Blog<br />Careers</p>
+      </div>
+      <div>
+        <h4>Customer Service</h4>
+        <p>Contact Us<br />Shipping Info<br />Returns</p>
+      </div>
+      <div>
+        <h4>Privacy & Terms</h4>
+        <p>Privacy Policy<br />Terms of Service<br />Cookie Policy</p>
+      </div>
+      <div>
+        <h4>Connect With Us</h4>
+        <p>Facebook<br />Twitter<br />Instagram</p>
+      </div>
+      <div style="width: 100%; text-align: center; color: #718096">
+        © 2024 BookStore. All rights reserved.
+      </div>
+    </footer>
+  </body>
+</html>
