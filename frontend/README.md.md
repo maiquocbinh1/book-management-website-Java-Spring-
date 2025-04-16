@@ -15,7 +15,8 @@
 - CRUD sach
 - Hien thi danh sach sach, chi tiet sach
 - Tich hop API backend bang React (Axios)
-- Chuc nang giao dien: danh sach, tim kiem, them, xoa sach
+- Chuc nang giao dien: danh sach, tim kiem, them
+
 
 ### Tai khoan dang nhap (neu co)
 - (Dang cap nhat)
